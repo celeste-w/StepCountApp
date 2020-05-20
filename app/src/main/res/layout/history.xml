@@ -15,7 +15,7 @@
         <ImageView
             android:id="@+id/iv_left"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="48dp"
             android:layout_gravity="center"
             android:gravity="center"
             android:onClick="onBackward"
@@ -23,6 +23,7 @@
             android:paddingRight="18dp"
             android:src="@mipmap/arrow_back_white"
             android:visibility="visible" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

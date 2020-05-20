@@ -48,7 +48,7 @@ public abstract class CommonAdapter<T> extends BaseAdapter {
         return convertView;
     }
 
-  
+
      // 需要去实现的对item中的view的设置操作
 
     protected abstract void convertView(View item, T t);
