@@ -24,9 +24,6 @@ import java.util.Locale;
 import com.example.stepcounttest.R;
 import com.example.stepcounttest.step.utils.SharedPreferencesUtils;
 
-/**
- * Created by yuandl on 2016-10-18.
- */
 
 public class SetPlanActivity extends AppCompatActivity implements View.OnClickListener {
 

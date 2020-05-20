@@ -1,6 +1,7 @@
 package com.example.stepcounttest.step.service;
 
 import android.app.Notification;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
@@ -98,7 +99,7 @@ public class StepService extends Service implements SensorEventListener {
     public void onCreate() {
         super.onCreate();
         Log.d(TAG, "onCreate()");
-        initNotification();
+        //initNotification();
         initTodayData();
         initBroadcastReceiver();
         new Thread(new Runnable() {
@@ -138,6 +139,19 @@ public class StepService extends Service implements SensorEventListener {
         mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         startForeground(notifyId_Step, notification);
         Log.d(TAG, "initNotification()");
+
+
+
+
+
+        /*NotificationManager notificationManager = (NotificationManager) MyApp.getInstance().getSystemService(Context.NOTIFICATION_SERVICE);
+        NotificationChannel mChannel = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            mChannel = new NotificationChannel(CHANNEL_ID_STRING, "诺秒贷", NotificationManager.IMPORTANCE_HIGH);
+            notificationManager.createNotificationChannel(mChannel);
+            Notification notification = new Notification.Builder(getApplicationContext(), CHANNEL_ID_STRING).build();
+            startForeground(1, notification);
+        }*/
     }
 
     /**
@@ -160,7 +174,7 @@ public class StepService extends Service implements SensorEventListener {
         if (mStepCount != null) {
             mStepCount.setSteps(CURRENT_STEP);
         }
-        updateNotification();
+        //updateNotification();
     }
 
     /**

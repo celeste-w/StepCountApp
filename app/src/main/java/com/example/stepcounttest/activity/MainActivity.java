@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         sp = new SharedPreferencesUtils(this);
         //获取用户设置的计划锻炼步数，没有设置过的话默认7000
         String planWalk_QTY = (String) sp.getParam("planWalk_QTY", "7000");
+        //planWalk_QTY="123";
         //设置当前步数为0
         cc.setCurrentCount(Integer.parseInt(planWalk_QTY), 0);
         tv_isSupport.setText("计步中...");

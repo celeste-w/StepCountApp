@@ -10,10 +10,9 @@ import android.util.AttributeSet;
 import android.view.View;
 import com.example.stepcounttest.R;
 
-/**
- * Created by DylanAndroid on 2016/5/26.
- * 显示步数的圆弧
- */
+
+ //显示步数的圆弧
+
 
 public class StepArcView extends View {
 

@@ -1,7 +1,6 @@
 package com.example.stepcounttest.activity;
 
 
-import android.support.annotation.Nullable;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -12,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.stepcounttest.R;
@@ -22,10 +22,6 @@ import com.example.stepcounttest.step.utils.DbUtils;
 import com.orhanobut.logger.Logger;
 
 import java.util.List;
-
-/**
- * Created by yuandl on 2016-10-18.
- */
 
 public class HistoryActivity extends AppCompatActivity {
     private LinearLayout layout_titlebar;

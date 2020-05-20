@@ -2,9 +2,6 @@ package com.example.stepcounttest.app;
 
 import android.app.Application;
 
-/**
- * Created by yuandl on 2016-10-18.
- */
 
 public class MyApplication extends Application {
     @Override
