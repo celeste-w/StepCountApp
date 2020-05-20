@@ -63,9 +63,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private boolean isBind = false;
 
-    /**
-     * 开启计步服务
-     */
+
+     //开启计步服务
+
     private void setupService() {
         Intent intent = new Intent(this, StepService.class);
         isBind = bindService(intent, conn, Context.BIND_AUTO_CREATE);
